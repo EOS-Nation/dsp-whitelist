@@ -31,9 +31,9 @@ Adds user to whitelist table
 
 ### params
 
-- `@param {name} account` - EOSIO account name to whitelist
-- `@param {name} service` - DSP service
-- `@param {name} package` - DSP package name
+- `{name} account` - EOSIO account name to whitelist
+- `{name} service` - DSP service
+- `{name} package` - DSP package name
 
 ### example
 
@@ -47,9 +47,9 @@ Removes user from whitelist table
 
 ### params
 
-- `@param {name} account` - EOSIO account name to whitelist
-- `@param {name} service` - DSP service
-- `@param {name} package` - DSP package name
+- `{name} account` - EOSIO account name to whitelist
+- `{name} service` - DSP service
+- `{name} package` - DSP package name
 
 ### example
 
@@ -64,9 +64,9 @@ Checks if account name is authorized to use this package
 
 ### params
 
-- `@param {name} account` - EOSIO account name to whitelist
-- `@param {name} service` - DSP service
-- `@param {name} package` - DSP package name
+- `{name} account` - EOSIO account name to whitelist
+- `{name} service` - DSP service
+- `{name} package` - DSP package name
 
 ### example
 
@@ -80,10 +80,10 @@ Contains all information related to the whitelist
 
 ### params
 
-- `@param {unit64_t} id`  - Identifier for whitelist entry
-- `@param {name} account` - EOSIO account name to whitelist
-- `@param {name} service` - DSP service
-- `@param {name} package` - DSP package name
+- `{unit64_t} id`  - Identifier for whitelist entry
+- `{name} account` - EOSIO account name to whitelist
+- `{name} service` - DSP service
+- `{name} package` - DSP package name
 
 ### example
 
