@@ -1,8 +1,6 @@
 # DSP Whitelist
 
-A whitelisting contract for DSPs to control who registers with them
-
-
+This contract is to store and manage account whitelising for DSPs.
 
 ## Quickstart
 
@@ -11,7 +9,6 @@ A whitelisting contract for DSPs to control who registers with them
 ./deploy.sh
 ./test.sh
 ```
-
 
 ## ACTIONS
 
@@ -23,63 +20,59 @@ A whitelisting contract for DSPs to control who registers with them
 
 - [`whitelist`](#table-whitelist)
 
-
 ### ACTION `add`
 
 Adds user to whitelist table
 
 ### params
-    
+
 - `@param {name} account` - EOSIO account name to whitelist
 - `@param {name} service` - DSP service
 - `@param {name} package` - DSP package name
 
 ### example
 
-```js
-Add ("myaccount","ipfsservic1","package1")
+```bash
+cleos push action <CODE> add '["myaccount","ipfsservic1","package1"]' -p <CODE>
 ```
 
- 
 ### ACTION `remove`
 
 Removes user from whitelist table
 
 ### params
-    
+
 - `@param {name} account` - EOSIO account name to whitelist
 - `@param {name} service` - DSP service
 - `@param {name} package` - DSP package name
 
 ### example
-  
-```js
-remove ("myaccount","ipfsservic1","package1")
+
+```bash
+cleos push action <CODE> remove '["myaccount","ipfsservic1","package1"]' -p <CODE>
 ```
 
 
-### ACTION `checklist`     
+### ACTION `checklist`
 
 Checks if account name is authorized to use this package
 
 ### params
-    
+
 - `@param {name} account` - EOSIO account name to whitelist
 - `@param {name} service` - DSP service
 - `@param {name} package` - DSP package name
 
 ### example
-    
-```js
-checklist ("myaccount","ipfsservic1","package1")
+
+```bash
+cleos push action <CODE> checklist '["myaccount","ipfsservic1","package1"]' -p <CODE>
 ```
-
-
 
 ### TABLE `whitelist`
 
 Contains all information related to the whitelist
-    
+
 ### params
 
 - `@param {unit64_t} id`  - Identifier for whitelist entry
@@ -90,10 +83,10 @@ Contains all information related to the whitelist
 ### example
 
 ```json
-     {
-       "id": 0,
-       "account": "myaccount",
-       "service": "ipfsservice1",
-       "package": "package1"
-     }
-``` 
+{
+  "id": 0,
+  "account": "myaccount",
+  "service": "ipfsservice1",
+  "package": "package1"
+}
+```

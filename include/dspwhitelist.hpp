@@ -34,6 +34,9 @@ public:
     * @param {name} account - EOSIO account name to whitelist
     * @param {name} service - DSP service (ex: ipfsservic1)
     * @param {name} package - DSP package name (ex: package1)
+    * @example
+    *
+    * cleos push action <CODE> add '["myaccount","ipfsservic1","package1"]' -p <CODE>
     */
    [[eosio::action]]
    void add( name account, name service, name package );
@@ -44,6 +47,9 @@ public:
     * @param {name} account - EOSIO account name to whitelist
     * @param {name} service - DSP service (ex: ipfsservic1)
     * @param {name} package - DSP package name (ex: package1)
+    * @example
+    *
+    * cleos push action <CODE> remove '["myaccount","ipfsservic1","package1"]' -p <CODE>
     */
    [[eosio::action]]
    void remove( name account, name service, name package );
@@ -54,6 +60,9 @@ public:
     * @param {name} account - EOSIO account name to whitelist
     * @param {name} service - DSP service (ex: ipfsservic1)
     * @param {name} package - DSP package name (ex: package1)
+    * @example
+    *
+    * cleos push action <CODE> checklist '["myaccount","ipfsservic1","package1"]' -p <CODE>
     */
    [[eosio::action]]
    void checklist( name account, name service, name package );
