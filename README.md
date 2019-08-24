@@ -10,10 +10,10 @@ This contract is to store and manage account whitelising for DSPs.
 ./test.sh
 ```
 
-## Releases
+## [Releases](https://github.com/EOS-Nation/dsp-whitelist/releases)
 
-- [v1.0 `dspwhitelist.wasm`](https://github.com/EOS-Nation/dsp-whitelist/releases/download/1.0.0/dspwhitelist.wasm)
-- [v1.0 `dspwhitelist.abi`](https://github.com/EOS-Nation/dsp-whitelist/releases/download/1.0.0/dspwhitelist.abi)
+- [`dspwhitelist.wasm`](https://github.com/EOS-Nation/dsp-whitelist/releases/download/1.0.0/dspwhitelist.wasm) (v1.0.0)
+- [`dspwhitelist.abi`](https://github.com/EOS-Nation/dsp-whitelist/releases/download/1.0.0/dspwhitelist.abi) (v1.0.0)
 
 ## ACTIONS
 
