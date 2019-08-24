@@ -36,7 +36,7 @@ public:
     * @param {name} package - DSP package name (ex: package1)
     * @example
     *
-    * cleos push action <CODE> add '["myaccount","ipfsservic1","package1"]' -p <CODE>
+    * cleos push action <DSP> add '["myaccount","ipfsservic1","package1"]' -p <DSP>
     */
    [[eosio::action]]
    void add( name account, name service, name package );
@@ -49,7 +49,7 @@ public:
     * @param {name} package - DSP package name (ex: package1)
     * @example
     *
-    * cleos push action <CODE> remove '["myaccount","ipfsservic1","package1"]' -p <CODE>
+    * cleos push action <DSP> remove '["myaccount","ipfsservic1","package1"]' -p <DSP>
     */
    [[eosio::action]]
    void remove( name account, name service, name package );
@@ -62,7 +62,7 @@ public:
     * @param {name} package - DSP package name (ex: package1)
     * @example
     *
-    * cleos push action <CODE> checklist '["myaccount","ipfsservic1","package1"]' -p <CODE>
+    * cleos push action <DSP> checklist '["myaccount","ipfsservic1","package1"]' -p <DSP>
     */
    [[eosio::action]]
    void checklist( name account, name service, name package );

@@ -33,7 +33,7 @@ Adds user to whitelist table
 ### example
 
 ```bash
-cleos push action <CODE> add '["myaccount","ipfsservic1","package1"]' -p <CODE>
+cleos push action <DSP> add '["myaccount","ipfsservic1","package1"]' -p <DSP>
 ```
 
 ### ACTION `remove`
@@ -49,7 +49,7 @@ Removes user from whitelist table
 ### example
 
 ```bash
-cleos push action <CODE> remove '["myaccount","ipfsservic1","package1"]' -p <CODE>
+cleos push action <DSP> remove '["myaccount","ipfsservic1","package1"]' -p <DSP>
 ```
 
 
@@ -66,7 +66,7 @@ Checks if account name is authorized to use this package
 ### example
 
 ```bash
-cleos push action <CODE> checklist '["myaccount","ipfsservic1","package1"]' -p <CODE>
+cleos push action <DSP> checklist '["myaccount","ipfsservic1","package1"]' -p <DSP>
 ```
 
 ### TABLE `whitelist`
